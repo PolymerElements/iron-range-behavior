@@ -94,7 +94,9 @@ One can build a progress bar using `core-range` like this:
       },
       
       validateValue: function() {
-        this.value = this.clampValue(this.value);
+        var v = this.clampValue(this.value);
+        this.value = this.oldValue = isNaN(v) ? this.oldValue : v;
+        return this.value !== v;
       },
       
       update: function() {
