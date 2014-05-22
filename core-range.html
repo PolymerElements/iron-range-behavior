@@ -88,7 +88,7 @@ One can build a progress bar using `core-range` like this:
     },
     
     calcStep: function(value) {
-      return this.step ? (Math.round(value / this.step) * this.step) : value;
+      return this.step ? (Math.round(value / this.step) / (1 / this.step)) : value;
     },
     
     validateValue: function() {
