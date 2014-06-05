@@ -80,7 +80,7 @@ One can build a progress bar using `core-range` like this:
     },
     
     calcRatio: function(value) {
-      return (value - this.min) / (this.max - this.min);
+      return (this.clampValue(value) - this.min) / (this.max - this.min);
     },
     
     clampValue: function(value) {
