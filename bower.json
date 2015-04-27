@@ -9,6 +9,6 @@
    "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^0.8.0",
     "test-fixture": "PolymerElements/test-fixture#^0.8.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.6.0"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#master"
   }
 }
