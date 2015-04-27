@@ -7,8 +7,8 @@
     "iron-input": "PolymerElements/iron-input#^0.8.0"
   },
    "devDependencies": {
-    "iron-component-page": "polymerelements/iron-component-page#^0.8.0",
-    "test-fixture": "polymerelements/test-fixture#^0.8.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^0.8.0",
+    "test-fixture": "PolymerElements/test-fixture#^0.8.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.6.0"
   }
 }
