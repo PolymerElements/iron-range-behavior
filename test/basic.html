@@ -11,26 +11,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>core-range-basic</title>
+  <title>iron-range-behavior</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
   <script src="../../web-component-tester/browser.js"></script>
   <script src="../../test-fixture/test-fixture-mocha.js"></script>
 
-  <link rel="import" href="../iron-range.html">
+  <link rel="import" href="../iron-range-behavior.html">
   <link rel="import" href="../../test-fixture/test-fixture.html">
 </head>
 <body>
-  
+
+  <script>
+    Polymer({
+      is: 'x-progressbar',
+
+      behaviors: [Polymer.IronRangeBehavior]
+    });
+  </script>
+
   <test-fixture id="trivialRange">
     <template>
-      <iron-range></iron-range>
+      <x-progressbar></x-progressbar>
     </template>
   </test-fixture>
 
   <script>
-    suite('<iron-range>', function() {
+    suite('<x-progressbar>', function() {
       var range;
 
       setup(function() {
@@ -55,7 +63,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           });
         });
       });
-      
+
       test('set max', function(done) {
         range.max = 10;
         range.value = 11;
@@ -64,7 +72,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           done();
         });
       });
-      
+
       test('test ratio', function(done) {
         range.max = 10;
         range.value = 5;
@@ -73,7 +81,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           done();
         });
       });
-      
+
       test('set min', function(done) {
         range.min = 10
         range.max = 50;
@@ -87,7 +95,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           });
         });
       });
-      
+
       test('set step', function(done) {
         range.min = 0;
         range.max = 10;
