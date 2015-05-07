@@ -1,13 +1,27 @@
 {
   "name": "iron-range-behavior",
-  "version": "0.8.0",
+  "version": "0.9.0",
+  "authors": "The Polymer Authors",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer"
+  ],
+  "main": [
+    "iron-range-behavior.html"
+  ],
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-range-behavior.git"
+  },
   "dependencies": {
-    "polymer": "polymer/polymer#v0.8.0-rc.7"
+    "polymer": "polymer/polymer#v0.9.0-rc.1",
+    "paper-input": "PolymerElements/paper-input#v0.9.0"
   },
    "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^0.8.0",
-    "test-fixture": "PolymerElements/test-fixture#^0.8.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^0.9.0",
+    "test-fixture": "PolymerElements/test-fixture#^0.9.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.6.0"
   }
 }
