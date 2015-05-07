@@ -8,28 +8,11 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<!--
-The `iron-range` element is used for managing a numeric value within a given 
-range.  It has no visual appearance and is typically used in conjunction with 
-another element.
-
-One can build a progress bar using `iron-range` like this:
-
-  <iron-range min="0" max="200" value="100" ratio="{{ratio}}"></iron-range>
-  <div class="progress-bar" style="width: {{ratio}}%;"></div>
-
-@group Polymer Iron Elements
-@element iron-range
-@homepage github.io
--->
-
 <link rel="import" href="../polymer/polymer.html">
 
 <script>
 
-Polymer({
-
-  is: 'iron-range',
+ Polymer.Range = {
 
   properties: {
 
@@ -42,9 +25,11 @@ Polymer({
      */
     value: {
       type: Number,
-      value: 0
+      value: 0,
+      notify: true,
+      reflectToAttribute: true
     },
-    
+
     /**
      * The number that indicates the minimum value of the range.
      *
@@ -54,9 +39,10 @@ Polymer({
      */
     min: {
       type: Number,
-      value: 0
+      value: 0,
+      notify: true
     },
-    
+
     /**
      * The number that indicates the maximum value of the range.
      *
@@ -66,9 +52,10 @@ Polymer({
      */
     max: {
       type: Number,
-      value: 100
+      value: 100,
+      notify: true
     },
-    
+
     /**
      * Specifies the value granularity of the range's value.
      *
@@ -78,9 +65,10 @@ Polymer({
      */
     step: {
       type: Number,
-      value: 1
+      value: 1,
+      notify: true
     },
-    
+
     /**
      * Returns the ratio of the value.
      *
@@ -95,33 +83,33 @@ Polymer({
       notify: true
     },
   },
-  
+
   observers: [
     '_update(value, min, max, step)'
   ],
-  
+
   _calcRatio: function(value) {
     return (this._clampValue(value) - this.min) / (this.max - this.min);
   },
-  
+
   _clampValue: function(value) {
     return Math.min(this.max, Math.max(this.min, this._calcStep(value)));
   },
-  
+
   _calcStep: function(value) {
     return this.step ? (Math.round(value / this.step) / (1 / this.step)) : value;
   },
-  
+
   _validateValue: function() {
     var v = this._clampValue(this.value);
     this.value = this.oldValue = isNaN(v) ? this.oldValue : v;
     return this.value !== v;
   },
-  
+
   _update: function() {
     this._validateValue();
     this._setRatio(this._calcRatio(this.value) * 100);
   }
-  
-});
+
+};
 </script>
