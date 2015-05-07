@@ -1,10 +1,9 @@
 {
-  "name": "iron-range",
+  "name": "range-behavior",
   "version": "0.8.0",
   "private": true,
   "dependencies": {
-    "polymer": "polymer/polymer#v0.8.0-rc.7",
-    "iron-input": "PolymerElements/iron-input#^0.8.0"
+    "polymer": "polymer/polymer#v0.8.0-rc.7"
   },
    "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^0.8.0",
