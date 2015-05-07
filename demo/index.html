@@ -14,7 +14,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     
-    <link rel="import" href="../range-behavior.html">
+    <link rel="import" href="../iron-range-behavior.html">
     <link rel="import" href="../../iron-input/iron-input.html">
     
     <style>
@@ -62,7 +62,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       Polymer({
         is: 'x-progressbar',
 
-        behaviors: [Polymer.Range],
+        behaviors: [Polymer.IronRangeBehavior],
 
         _computeStyle: function(ratio) {
           return 'width: ' + ratio + '%;';

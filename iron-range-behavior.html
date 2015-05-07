@@ -12,16 +12,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <script>
 
- Polymer.Range = {
+ Polymer.IronRangeBehavior = {
 
   properties: {
 
     /**
      * The number that represents the current value.
-     *
-     * @attribute value
-     * @type number
-     * @default 0
      */
     value: {
       type: Number,
@@ -32,10 +28,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /**
      * The number that indicates the minimum value of the range.
-     *
-     * @attribute min
-     * @type number
-     * @default 0
      */
     min: {
       type: Number,
@@ -45,10 +37,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /**
      * The number that indicates the maximum value of the range.
-     *
-     * @attribute max
-     * @type number
-     * @default 100
      */
     max: {
       type: Number,
@@ -58,10 +46,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /**
      * Specifies the value granularity of the range's value.
-     *
-     * @attribute step
-     * @type number
-     * @default 1
      */
     step: {
       type: Number,
@@ -71,10 +55,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /**
      * Returns the ratio of the value.
-     *
-     * @attribute ratio
-     * @type number
-     * @default 0
      */
     ratio: {
       type: Number,
