@@ -1,11 +1,14 @@
 {
   "name": "iron-range-behavior",
   "version": "0.9.0",
+  "description": "Provides a behavior for something with a minimum and maximum value",
   "authors": "The Polymer Authors",
   "keywords": [
     "web-components",
     "web-component",
-    "polymer"
+    "polymer",
+    "iron",
+    "behavior"
   ],
   "main": [
     "iron-range-behavior.html"
@@ -16,12 +19,12 @@
     "url": "git://github.com/PolymerElements/iron-range-behavior.git"
   },
   "dependencies": {
-    "polymer": "polymer/polymer#v0.9.0-rc.1",
-    "paper-input": "PolymerElements/paper-input#v0.9.0"
+    "polymer": "Polymer/polymer#^0.9.0"
   },
-   "devDependencies": {
+  "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^0.9.0",
+    "iron-input": "PolymerElements/iron-input#^0.9.0",
     "test-fixture": "PolymerElements/test-fixture#^0.9.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.6.0"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   }
 }
