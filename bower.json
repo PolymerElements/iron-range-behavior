@@ -9,9 +9,7 @@
     "polymer",
     "behavior"
   ],
-  "main": [
-    "iron-range-behavior.html"
-  ],
+  "main": "iron-range-behavior.html",
   "private": true,
   "repository": {
     "type": "git",
