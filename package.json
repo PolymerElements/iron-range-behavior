@@ -1,0 +1,22 @@
+{
+  "name": "@polymer/iron-range-behavior",
+  "flat": true,
+  "version": "3.0.0-pre.1",
+  "description": "Provides a behavior for something with a minimum and maximum value",
+  "contributors": "The Polymer Authors",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "behavior"
+  ],
+  "main": "iron-range-behavior.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-range-behavior.git"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.1"
+  },
+  "devDependencies": {}
+}
