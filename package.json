@@ -1,0 +1,10 @@
+{
+  "name": "@polymer/iron-range-behavior",
+  "private": true,
+  "description": "Provides a behavior for something with a minimum and maximum value",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-range-behavior.git"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt"
+}
