@@ -45,7 +45,7 @@ declare namespace Polymer {
     _clampValue(value: any): any;
     _calcStep(value: any): any;
     _validateValue(): any;
-    _update(): any;
+    _update(): void;
   }
 
   const IronRangeBehavior: object;
