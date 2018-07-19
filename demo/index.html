@@ -58,18 +58,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </template>
       <script type="module">
-import { IronRangeBehavior } from '../iron-range-behavior.js';
-import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
-Polymer({
-  is: 'x-progressbar',
+        import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 
-  behaviors: [IronRangeBehavior],
+        import {IronRangeBehavior} from '../iron-range-behavior.js';
 
-  _computeStyle: function(ratio) {
-    return 'width: ' + ratio + '%;';
-  }
-});
-</script>
+        Polymer({
+          is: 'x-progressbar',
+
+          behaviors: [IronRangeBehavior],
+
+          _computeStyle: function(ratio) {
+            return 'width: ' + ratio + '%;';
+          }
+        });
+      </script>
     </dom-module>
 
     <x-progressbar min="0" max="200" value="120"></x-progressbar>
